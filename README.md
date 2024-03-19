@@ -1,5 +1,7 @@
 # Decorate
 
+[![Test](https://github.com/pokatomnik/decorate/actions/workflows/deno.yml/badge.svg)](https://github.com/pokatomnik/decorate/actions/workflows/deno.yml)
+
 A simple set of useful ES Decorators for [Deno](https://deno.com/)
 
 ## `BoundMethod`
