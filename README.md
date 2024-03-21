@@ -44,3 +44,17 @@ console.log(instance.value); // 0
 instance.setValue(42);
 console.log(instance.value); // again, 0, because version is the same
 ```
+
+## Retry
+
+```typescript
+class ProbablyFail {
+  /**
+   * Tries three times to fetch data before giving up (throws last Error)
+   */
+  @Retry(3)
+  public async invoke() {
+    return await fetchDataFromServer("https://example.com");
+  }
+}
+```
