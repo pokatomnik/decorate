@@ -1,3 +1,6 @@
+/**
+ * Class method type
+ */
 export type ClassMethod<
   TThis extends object,
   TReturn,
