@@ -7,6 +7,13 @@ interface ComputedField<T> {
   memoizedState: MemoizedState<T>;
 }
 
+/**
+ * Decorator for getter memoization. Memoized previosly computed value.
+ * Can have an argument to get the memoization key, getter will be
+ * recomputing the value when key changed.
+ * @param getMemoKey get memoization key from the instance
+ * @returns Decorator for getter memoization
+ */
 export function MemoizedGetter<TThis extends object, TValue>(
   getMemoKey: (self: TThis) => unknown = () => null
 ) {

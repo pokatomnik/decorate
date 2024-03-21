@@ -1,5 +1,10 @@
 import { ClassMethod } from "./ClassMethod.ts";
 
+/**
+ * Binds class method to the instance
+ * @param _target class method
+ * @param context class decorator context
+ */
 export function BoundMethod<
   TThis extends object,
   TArgs extends ReadonlyArray<unknown>,
