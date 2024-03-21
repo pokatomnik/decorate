@@ -45,7 +45,7 @@ instance.setValue(42);
 console.log(instance.value); // again, 0, because version is the same
 ```
 
-## Retry
+## `Retry`
 
 ```typescript
 class ProbablyFail {
